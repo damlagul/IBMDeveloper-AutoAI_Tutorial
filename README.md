@@ -17,3 +17,16 @@ In this tutorial, the aim is to show the benefits of this service on a use case 
   * Create a Watson Studio service instance
   * Create a Watson Machine Learning service instance
   * Basic knowledge of machine learning algorithms
+
+# Estimated Time
+
+This tutorial takes approximately 20 minutes to complete including the training part in AutoAI.
+
+
+# Steps
+You can create an IBM Cloud Lite account using this link. After completing the signing process, you can follow the steps below.
+
+## Step 1: Create Required Service Instances
+
+In order to store our data, we need a storage service which is going to be linked with our project later on. To do that, search for Storage in the [IBM Cloud Catalog](https://cloud.ibm.com/catalog?search=object%20storage&category=storage) or directly go to Storage tab from the left menu from the same page and click **Object Storage** service.
+
