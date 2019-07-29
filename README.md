@@ -134,6 +134,10 @@ We are going to use Watson Studio to create a project in which we are planning t
 
 ![](images/19.png)
 
+*	You can refer to the video below for the next steps.
+
+![](images/deployment_tutorial.png)
+
 *	Now you can test your model from the interface provided after the deployment. You can either provide your input in JSON format or enter the input details to the fields given in the interface.
     * Input with JSON format 
     
