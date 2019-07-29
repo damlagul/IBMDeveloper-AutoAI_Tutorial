@@ -31,13 +31,27 @@ IBM Cloud Lite account can be created by using this [link](https://cloud.ibm.com
 In order to store the data, we need a storage service which is going to be linked with our project later on. To do that:
 *	Search for Storage in the [IBM Cloud Catalog](https://cloud.ibm.com/catalog?search=object%20storage&category=storage) or directly go to Storage tab from the left menu from the same page and click Object Storage service.
 
+![](images/1.png)
+
 * From the upcoming page, optionally you can give a name to this service instance and click **Create**.
+
+![](images/2.png)
 
 ### ii.	Watson Studio
 * Search for Studio in the [IBM Cloud Catalog](https://cloud.ibm.com/catalog?search=studio) and click the **Watson Studio** service tile.
+
+![](images/3.png)
+
 *	As done with the Object Storage service, you can name your service and click **Create**.
+
+![](images/4.png)
+
 *	After provisioning the Watson Studio service, click **Get Started** or directly go to [Watson Studio](https://dataplatform.cloud.ibm.com/) platform and login with your IBM Cloud account.
+
+![](images/5.png)
+
 *	You can review the introductory tutorial to learn about Watson Studio.
+
 
 ### Step 2: Train a model with AutoAI
 Watson Studio is an integrated platform designed to organize your project assets, like datasets, collaborators, models, notebooks. 
@@ -45,15 +59,36 @@ We are going to use Watson Studio to create a project in which we are planning t
 
 ### i.	Create a Watson Studio Project
 *	Click **Create** a Project.
+
+![](images/6.png)
+
 * Select **Create an empty project**
+
+![](images/7.png)
+
 *	Give a name your project. If you have a Lite account, the Object Storage service that we created in the previous step, will be selected automatically, otherwise select a service from the dropdown menu.
+
+![](images/8.png)
+
 *	This upcoming page is where your project assets are stored and organized. By clicking **Assets** bar, you can load your dataset from the left interface. 
 *	Upload GermanCreditData.csv
 
+![](images/9.png)
+
+
 ### ii.	Set up your AutoAI environment and generate pipelines
 *	To start the AutoAI experience, click **Add to Project** from the top and select **AutoAI**.
+
+![](images/10.png)
+
 *	Give your service a name.
+
+![](images/11.png)
+
 *	In order to associate a **Watson Machine Learning** instance, click to the given link. If you have an existing instance, select it from the Existing tab. If not, create a new one from the New tab. 
+
+![](images/12.png)
+
 *	After provisioning your WML instance, it will redirect you again the same page and click **Reload**, then **Create**.
 *	Select your dataset (you can upload it from your local or select from project)
 
@@ -77,20 +112,35 @@ We are going to use Watson Studio to create a project in which we are planning t
     *	Automated feature engineering (Pipeline 3)
     *	Hyperparameter optimization (Pipeline 4)
 
+![](images/15.png)
+
 *	Next step is to select the model which gives the best result by looking at the metrics. In our case Pipeline3 gave the best result with our metric: Area under the ROC Curve (ROC AUC).
 *	You can view the detailed results by clicking the corresponding pipeline from the leaderboard. In addition, you can save your model pipeline by clicking **Save as model** from the leaderboard or pipeline page. We are going to simple save the model which gives the best result for us.
+
+![](images/16.png)
+
 *	It will pop-up a window which asks the model name, description (optional) etc. After completing this fields, click **Save**.
+
+![](images/17.png)
+
 *	You will take a notification as below to indicate your model is saved to your project. Click **View in project**.
+
+![](images/18.png)
 
 ### iii.	Deploy and Test the model 
 *	To make the model ready for deployment, click **Deployments** tab and **Add Deployment**.
+
+![](images/19.png)
+
 *	Now you can test your model from the interface provided after the deployment. You can either provide your input in JSON format or enter the input details to the fields given in the interface.
     * Input with JSON format 
-   image
+    
+    ![](images/20.png)
   
                         
     * Input to the fields
-     image
+    ![](images/21.png)
+
      
 ```
    Input data: 
@@ -99,6 +149,9 @@ We are going to use Watson Studio to create a project in which we are planning t
 ```
 
 *	You can also use deployed models in your applications by making API calls. In order to show a use case, we are going to call our model from Notebook. To do so, go back to your Project Assets page and click **Add to project** and select **Notebook**.
+
+![](images/22.png)
+
 *	You can create notebooks in three ways. 
    * Create a blank notebook
    *	Import a notebook file (.ipynb) from your local device.
@@ -106,8 +159,13 @@ We are going to use Watson Studio to create a project in which we are planning t
 
 * In this demo, we are going to upload a notebook from file (Test WML model.ipynb).
 
+![](images/23.png)
+
 *	In the first cell, you need to enter your Watson Machine Learning API key. At the end of this cell, you will be given an access token from IBM Cloud.
 *	Second cell is the part where you call the model and make predictions. 
+
+![](images/24.png)
+
 
 
                            
