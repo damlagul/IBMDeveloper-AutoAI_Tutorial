@@ -103,6 +103,8 @@ We are going to use Watson Studio to create a project in which we are planning t
 
 *	To set up your AutoAI instance, you can follow the video below.
 
+![](images/autoai_tutorial.gif)
+
 #### --> AutoAI Pipeline
 * The experiment will begin just after you completed the processes above. 
 * The AutoAI process follows this sequence to build candidate pipelines:
