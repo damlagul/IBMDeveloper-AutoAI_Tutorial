@@ -85,18 +85,19 @@ We are going to use Watson Studio to create a project in which we are planning t
 ### iii.	Deploy and Test the model 
 *	To make the model ready for deployment, click **Deployments** tab and **Add Deployment**.
 *	Now you can test your model from the interface provided after the deployment. You can either provide your input in JSON format or enter the input details to the fields given in the interface.
-   * Input with JSON format 
+    * Input with JSON format 
    image
-   
+  
+                        
+    * Input to the fields
+     image
+     
 ```
    Input data: 
    {"input_data": [{"fields": ["Check_Account ", "Duration", "Credit_history", "Purpose", "Credit amount ", "Saving_account", "Employment", "Install_rate", "Personal_status", "Other_debrotors", "Present_residence", "Property", "Age", "Installment_plant", "Housing", "Num_credits", "Job", "Num_dependents", "Telephone", "Foreign"], 
                                  "values": [["A14", "48", "A34", "A43", "3573", "A65", "A75", "4", "A93", "A101","1","A121","47","A143","A152","1","A173","1","A192","A201"]]}]}
 ```
-                        
-   * Input to the fields
-   image
-   
+
 *	You can also use deployed models in your applications by making API calls. In order to show a use case, we are going to call our model from Notebook. To do so, go back to your Project Assets page and click **Add to project** and select **Notebook**.
 *	You can create notebooks in three ways. 
    * Create a blank notebook
