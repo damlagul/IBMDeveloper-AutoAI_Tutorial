@@ -71,7 +71,7 @@ We are going to use Watson Studio to create a project in which we are planning t
 ![](images/8.png)
 
 *	This upcoming page is where your project assets are stored and organized. By clicking **Assets** bar, you can load your dataset from the left interface. 
-*	Upload [german_credit_data.csv](../dataset/german_credit_data.csv) 
+*	Upload [dataset](../dataset/german_credit_data.csv) 
 
 ![](images/9.png)
 
